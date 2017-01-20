@@ -1,0 +1,21 @@
+header.main-header
+	div.home-menu.pure-menu.pure-menu-horizontal.pure-menu-fixed
+		section.header-left.pure-menu-heading
+			div.pure-menu-item
+				a(href='/').pure-menu-link
+					//- i.ion-android-home
+					span Yifan Zhou
+		section.header-right.pure-menu-heading
+			input(type='checkbox')#header-menu-toggle.hidden
+			div.toggle-button-wrapper
+				label(for='header-menu-toggle')
+					span.toggle-menu
+						span
+			nav.nav-main-menu
+				ul.pure-menu-list
+					li.pure-menu-item 
+						a(href='/projects').pure-menu-link Projects
+					li.pure-menu-item 
+						a(href='/playground').pure-menu-link Playground
+					li.pure-menu-item
+						a(href='/about').pure-menu-link About

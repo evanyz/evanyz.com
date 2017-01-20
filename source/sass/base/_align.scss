@@ -1,0 +1,12 @@
+.block-auto{
+	display: block;
+	margin: auto;
+}
+
+
+// height h80-1:80px h80-4:320px
+@for $i from 1 through 4{
+	.h80-#{$i}{
+		height:80px * $i;
+	}
+}

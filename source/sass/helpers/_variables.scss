@@ -1,0 +1,28 @@
+@import "_zindex";
+
+//	Color
+	// 	White
+		$white: #fff;
+	//	Modern and Muted
+		$greyblue: #A9B7C0;
+		$greyblue-dark: #8997A0;
+		$minty: #C7D8C6;
+		$skin: #EFD9C1;
+		$powder: #CCCBC6;
+
+//	Spacing
+	//	Letter
+		$title-spacing: 0.1em;
+	//	list item
+		$list-item-hori:0.7em;
+	//	windown padding
+		$window-pad-lr:15px;
+
+
+
+//	Media breakpoints
+	//	px        min: sm. ,,  max: sm-1
+		$sm:560px;
+		$md:768px;
+		$lg:1024px;
+		$xl:1280px;
