@@ -1,0 +1,208 @@
+// Content list:
+//
+// 1. Animated Swing panels
+// 2.
+// 3.
+
+
+
+
+
+// 1. Animated Swing panels
+// .preload * {
+//   transition: none !important;
+// }
+.four-panels-animated{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 600px;
+    @media screen and (max-width: ($sm - 1px)){
+        &{
+            height: 500px;
+        }
+    }
+    .grid-unit {
+        position: relative;
+        float: left;
+        width: 50%;
+        height: 50%;
+        overflow: hidden;
+        &:hover{
+            .label {
+                opacity: 0;
+            }
+            .swing-panel {
+              transform: rotateY(0deg);
+            }
+            .sphere {
+                background-color: rgba(255,255,255,0);
+            }
+            .icon {
+                color: #fff;
+                font-size: 4em;
+            }
+        } 
+    }
+    .top-left {
+        background: rgba(236,208,120,1);
+        .label {
+            bottom: 100px;
+            right: 80px;
+            transform: rotate(45deg);
+        }
+        .desc {
+            top: 0;
+            left: 0;
+        }
+        .sphere {
+            right: -100px;
+            bottom: -100px;
+        }
+        .icon {
+            bottom: 25px;
+            right: 30px;
+            color: rgba(236,208,120,1);
+        }
+
+    }
+    .top-right {
+        background: rgba(217,91,67,1);
+        //border-right: 10px solid #fff;
+        .label {
+            bottom: 100px;
+            left: 80px;
+            transform: rotate(-45deg);
+        }
+        .swing-panel{
+            transform-origin: right 50%;
+            transform: rotateY(-120deg);
+        }
+        .desc {
+            top: 0;
+            right: 0;
+        }
+        .sphere {
+            left: -100px;
+            bottom: -100px;
+        }
+        .icon {
+            bottom: 25px;
+            left: 25px;
+            color: rgba(217,91,67,1);
+        }
+    }
+
+    .bottom-left {
+        background: rgba(84,36,55,1);
+        //border-bottom: 10px solid #fff;
+        .label {
+            top: 100px;
+            right: 80px;
+            transform: rotate(-45deg);
+        }
+        .desc {
+            bottom: 0;
+            left: 0;
+        }
+        .sphere {
+            right: -100px;
+            top: -100px;
+        }
+        .icon {
+            top: 20px;
+            right: 30px;
+            color: rgba(84,36,55,1);
+        }
+    }
+    .bottom-right {
+        background: rgba(192,41,66,1);
+        //border-bottom: 10px solid #fff;
+        //border-right: 10px solid #fff;
+        .swing-panel{
+            transform-origin: right 50%;
+            transform: rotateY(-120deg);
+        }
+        .label {
+            top: 100px;
+            left: 80px;
+            transform: rotate(45deg);
+        }
+        .desc {
+            bottom: 0;
+            right: 0;
+        }
+        .sphere {
+            left: -100px;
+            top: -100px;
+        }
+        .icon {
+            top: 20px;
+            left: 25px;
+            color: rgba(192,41,66,1);
+        }
+    }
+    .swing-panel {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+        font-size: 2.5em;
+        color: #fff;
+        //font-family: Oxygen, arial, sans-serif;
+        transform-origin: left 50%;
+        transform: rotateY(120deg);
+        transition: transform .5s ease;
+        letter-spacing: -.05em;
+        text-shadow: 0 1px 0 rgba(0,0,0,.2);
+    }
+    .desc {
+        display: block;
+        position: absolute;
+        padding: 5%;
+    }
+    .label {
+        position: absolute;
+        font-family: Oxygen, arial, sans-serif;
+        color: #fff;
+        font-size: 1.2em;
+        opacity: 1;
+        transition: opacity .5s ease;
+    }
+    .sphere {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255,255,255,1);
+        border-radius: 500px;
+        transition: background-color .25s ease;
+        opacity: 1;
+    }
+    .icon {
+        position: absolute;
+        font-size: 2em;
+        transition: all .25s ease;
+        z-index: 5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
