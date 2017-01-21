@@ -24,7 +24,8 @@ $header-title-line-height: 3em;
 	}
 	.pure-menu-link{
 		&:hover{
-			background-color: #607D8B;
+			background-color: transparent;
+			font-weight: bold;
 		}
 	}
 	.pure-menu-item a{

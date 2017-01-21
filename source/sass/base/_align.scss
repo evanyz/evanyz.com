@@ -3,6 +3,10 @@
 	margin: auto;
 }
 
+// position
+.pos-ab{
+	position: absolute;
+}
 
 // height h80-1:80px h80-4:320px
 @for $i from 1 through 4{

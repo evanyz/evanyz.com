@@ -30,10 +30,14 @@
         width: 50%;
         height: 50%;
         overflow: hidden;
+        .minion-switcher{
+        //    display: none;
+        }
         &:hover{
             .label {
                 transform: rotate(0);
-                //opacity: 0;
+                border: 2px solid white;
+                border-radius: 4px;
             }
             .swing-panel {
               transform: rotateY(0deg);
@@ -71,7 +75,6 @@
     }
     .top-right {
         background: rgba(217,91,67,1);
-        //border-right: 10px solid #fff;
         .label {
             bottom: 100px;
             left: 80px;
@@ -98,7 +101,6 @@
 
     .bottom-left {
         background: rgba(84,36,55,1);
-        //border-bottom: 10px solid #fff;
         .label {
             top: 100px;
             right: 80px;
@@ -120,8 +122,6 @@
     }
     .bottom-right {
         background: rgba(192,41,66,1);
-        //border-bottom: 10px solid #fff;
-        //border-right: 10px solid #fff;
         .swing-panel{
             transform-origin: right 50%;
             transform: rotateY(-120deg);
@@ -153,17 +153,19 @@
         height: 100%; 
         font-size: 1.3em;
         color: #fff;
-        //font-family: Oxygen, arial, sans-serif;
         transform-origin: left 50%;
         transform: rotateY(120deg);
         transition: transform .5s ease;
-        //letter-spacing: .05em;
-        //text-shadow: 0 1px 0 rgba(0,0,0,.2);
     }
     .desc {
         display: block;
         position: absolute;
         padding: 5%;
+        @media screen and (max-width: ($sm - 1px)){
+            p{
+                display: none;
+            }
+        }
     }
     .label {
         position: absolute;
@@ -171,7 +173,7 @@
         color: #fff;
         font-size: 1.2em;
         opacity: 1;
-        //transition: opacity .5s ease;
+        padding:7px 10px;
         transition: transform 0.5s ease;
     }
     .sphere {
