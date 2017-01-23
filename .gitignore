@@ -1,3 +1,5 @@
 node_modules/
 public/css/main.css
 public/css/main.css.map
+nohup.out
+npm-debug.log
