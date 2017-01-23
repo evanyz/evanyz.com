@@ -53,6 +53,9 @@
     }
     .top-left {
         background: rgba(236,208,120,1);
+        &:hover .label{
+            transform: translate(50px);
+        }   
         .label {
             bottom: 100px;
             right: 80px;
@@ -75,6 +78,9 @@
     }
     .top-right {
         background: rgba(217,91,67,1);
+        &:hover .label{
+            transform: translate(-50px);
+        } 
         .label {
             bottom: 100px;
             left: 80px;
@@ -101,6 +107,9 @@
 
     .bottom-left {
         background: rgba(84,36,55,1);
+        &:hover .label{
+            transform: translate(50px);
+        } 
         .label {
             top: 100px;
             right: 80px;
@@ -122,6 +131,9 @@
     }
     .bottom-right {
         background: rgba(192,41,66,1);
+        &:hover .label{
+            transform: translate(-50px);
+        } 
         .swing-panel{
             transform-origin: right 50%;
             transform: rotateY(-120deg);
