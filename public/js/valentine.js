@@ -3,7 +3,7 @@ function random(min, max) {
 }
 
 //var max = 453.5;
-var max = window.innerHeight;
+var max = $(window).height();
 
 var $hearts = $(".heart-path");
 
