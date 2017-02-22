@@ -11,6 +11,8 @@ var about = require('./routes/about');
 var playground = require('./routes/playground');
 var aboutme = require('./routes/me');
 var valentine = require('./routes/valentine');
+var handing = require('./routes/handing');
+
 
 var app = express();
 
@@ -32,6 +34,8 @@ app.use('/about', about);
 app.use('/playground', playground);
 app.use('/me', aboutme);
 app.use('/valentine', valentine);
+app.use('/handing', handing);
+
 
 
 
